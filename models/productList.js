@@ -16,7 +16,7 @@ const productSchema = mongoose.Schema(
         },
         state:{
             type: Number,
-            required:[true, "pliss add an state for List"]
+            default: 0
         },
         idUserFK:{
             type: Number,
