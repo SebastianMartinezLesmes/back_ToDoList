@@ -31,19 +31,6 @@ app.get('/getList', async(req,res) => {
     }
 })
 
-/*
-    app.get('/getOneList/:id', async(req,res) => {    
-        try {
-            const { id } = req.params;
-            const product = await ProductList.findById(id); 
-            res.status(200).json(product);
-        } catch {
-            console.log(error.message)
-            res.status(500).json({message: error.message})
-        }
-    })
-*/
-
 app.post('/createUser', async(req,res,next) => {    
     try{
         const product = await ProductUser.create(req.body)
@@ -58,12 +45,12 @@ app.post('/createList', async(req,res,next) => {
     try{
         const product = await ProductList.create(req.body)
         res.status(200).json(product);
+        console.log('Datos recibidos:', req.body);
     } catch {
         console.log(error.message)
         res.status(500).json({message: error.message})
     }
 })
-
 
 app.delete('/deleteList/:id', async(req,res) => {    
     try {

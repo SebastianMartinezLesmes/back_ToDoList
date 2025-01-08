@@ -12,7 +12,10 @@ const productSchema = mongoose.Schema(
         },
         description:{
             type: String,
-            required:[true, "pliss add an email for List"]
+        },
+        date: {
+            type: String,
+            required: [true, "pliss add a date for List"]
         },
         state:{
             type: Number,
