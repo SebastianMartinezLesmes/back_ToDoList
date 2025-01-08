@@ -1,0 +1,46 @@
+[{
+  "_id": "64f71b4d8451c349d8d2e9a8",
+  "idUser": 1,
+  "role": "client",
+  "nameUser": "John Doe",
+  "email": "johndoe@example.com",
+  "passwordUser": "securepassword123",
+  "state": "activo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677d8a0c4f9ef61250519f33"
+  },
+  "idUser": 2,
+  "role": "administrador",
+  "nameUser": "Admin",
+  "email": "admin",
+  "passwordUser": "123",
+  "state": "activo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677d8bf73aef3149a249c645"
+  },
+  "idUser": 3,
+  "role": "client",
+  "nameUser": "jose",
+  "email": "joseexample.com",
+  "passwordUser": "20Colombia2025.",
+  "state": "activo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e979d31317f9755e024d3"
+  },
+  "idUser": 6,
+  "role": "client",
+  "nameUser": "carlos",
+  "email": "carlos@gmail.com",
+  "passwordUser": "Colombia2025.",
+  "state": "activo",
+  "__v": 0
+}]

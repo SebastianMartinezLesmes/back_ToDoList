@@ -1,0 +1,47 @@
+[{
+  "_id": {
+    "$oid": "677d8fea3aef3149a249c66a"
+  },
+  "idList": 2,
+  "nameList": "requerimiento fecha",
+  "description": "colocar un espacio donde se ponga una fecha limite en el fomulario",
+  "state": 1,
+  "idUserFK": 1,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677eb88731317f9755e0250c"
+  },
+  "idList": 2,
+  "nameList": "tarea 1",
+  "description": "desc tarea 1",
+  "date": "2025-01-09",
+  "state": 1,
+  "idUserFK": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677eb9bb8ff80272de24ed5c"
+  },
+  "idList": 3,
+  "nameList": "tarea 2",
+  "description": "desc tarea 2",
+  "date": "2025-01-09",
+  "state": 0,
+  "idUserFK": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677eb9d48ff80272de24ed5f"
+  },
+  "idList": 4,
+  "nameList": "desempate",
+  "description": "otra tarea",
+  "date": "2025-01-31",
+  "state": 0,
+  "idUserFK": 3,
+  "__v": 0
+}]
