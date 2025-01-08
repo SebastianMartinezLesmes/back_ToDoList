@@ -45,7 +45,6 @@ app.post('/createList', async(req,res,next) => {
     try{
         const product = await ProductList.create(req.body)
         res.status(200).json(product);
-        console.log('Datos recibidos:', req.body);
     } catch {
         console.log(error.message)
         res.status(500).json({message: error.message})
@@ -78,7 +77,29 @@ app.put('/updateList/:id', async(req,res,next) => {
     }
 })
 
+app.put('/updateListData/:id', async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        const { nameList, description, date } = req.body;
+        const updatedProduct = await ProductList.findByIdAndUpdate(
+            id, 
+            { "nameList": nameList, "description": description, "date": date },
+            { new: true }
+        );
+        if (!nameList || !description || !date) {
+            return res.status(400).json({ message: 'Datos incompletos o inválidos' });
+        }        
+        if (!updatedProduct) {
+            return res.status(404).json({ message: 'Product not found' });
+        }
+        res.status(200).json(updatedProduct);
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).json({ message: error.message });
+    }
+});
 
+// conection with data base
 mongoose.set("strictQuery", false)
 mongoose.connect('mongodb://localhost:27017/toDoList').then(() => {
     console.log('conection mongoDB sucerfully')

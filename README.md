@@ -4,11 +4,9 @@
 ```npm run serve```
 
 # Modelo de Usuario Base
-
 ```json
 {
-    "_id": {"$oid": "677d8a0c4f9ef61250519f33"},
-    "idUser": 2,
+    "idUser": 1,
     "role": "client",
     "nameUser": "Admin",
     "email": "admin",
@@ -18,10 +16,8 @@
 }
 ```
 # Modelo de Usuario Administrador
-
 ```json
 {
-    "_id": {"$oid": "677d8a0c4f9ef61250519f33"},
     "idUser": 2,
     "role": "administrador",
     "nameUser": "Admin",

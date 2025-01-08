@@ -9,6 +9,7 @@ const productSchema = mongoose.Schema(
         role:{
             type: String,
             default: "client"
+            // other rol: administrator
         },
         nameUser:{
             type: String,
